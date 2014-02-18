@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FMMoveTableView.h"
+
 
 @class TLTableViewController;
 
@@ -17,7 +19,9 @@
 
 @end
 
-@interface TLTableViewController : UITableViewController
+@interface TLTableViewController : UIViewController <FMMoveTableViewDataSource, FMMoveTableViewDelegate>
+
+@property (nonatomic, strong) IBOutlet FMMoveTableView *tableView;
 
 @property (nonatomic, weak) id<TLTableViewControllerDelegate> delegate;
 

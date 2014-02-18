@@ -20,12 +20,12 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	self.navigationItem.leftBarButtonItem = self.tableViewController.navigationItem.leftBarButtonItem;
-	self.navigationItem.rightBarButtonItem = self.tableViewController.navigationItem.rightBarButtonItem;
+//	self.navigationItem.leftBarButtonItem = self.tableViewController.navigationItem.leftBarButtonItem;
+//	self.navigationItem.rightBarButtonItem = self.tableViewController.navigationItem.rightBarButtonItem;
 	
 	self.navigationItem.title = @"Table View"; 
 	
-	[self setAppropriateToolbarItems];
+//	[self setAppropriateToolbarItems];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -34,7 +34,7 @@
 		self.tableViewController.delegate = self;
 	}
 }
-
+/*
 #pragma mark - Private Methods
 
 // Sets the appropriate UIBarButtonItems for our toolbar depending on the editing property of self.tableViewController.
@@ -54,13 +54,13 @@
 	
 	[self.toolbar setItems:itemsArray animated:NO];
 }
-
+*/
 #pragma mark - User Interface Methods
 
 /*
  These are all configurable to do whatever you want with them. We only really use the userDidPressTrashButton: method.
  */
-
+/*
 - (void)userDidPressAddButton:(id)sender {
 	[self.tableViewController insertNewObject:nil];
 }
@@ -87,5 +87,5 @@
 - (void)presentActionSheet:(UIActionSheet *)actionSheet fromViewController:(TLTableViewController *)viewController {
 	[actionSheet showFromToolbar:self.toolbar];
 }
-
+*/
 @end
